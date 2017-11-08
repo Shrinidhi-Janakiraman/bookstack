@@ -49,7 +49,7 @@
 			<div class="form-group">
 			<label class="col-sm-4 control-label" for="deliverydate">Delivery Date</label>
 			<div class="col-sm-4">
-			<label class="col-sm-4 control-label" for="deliverydate">Within  Working days.</label>
+			<label class="col-sm-4 control-label" for="deliverydate">Within 5 Working days.</label>
 		
 			</div>
 			</div>	

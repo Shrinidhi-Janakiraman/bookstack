@@ -170,9 +170,9 @@ public class CartController {
 			int price=Integer.parseInt(req.getParameter("pPrice"));
 			int quantity = Integer.parseInt(req.getParameter("pStock"));
 			//String imgName=req.getParameter("imgname");
-			Cart cartexit = cartDaoImpl.getCartByID(pid,userEmail);
+			Cart cartexists = cartDaoImpl.getCartByID(pid,userEmail);
 			
-			if(cartexit == null)
+			if(cartexists == null)
 			{
 				Cart cm = new Cart();
 				
@@ -184,16 +184,16 @@ public class CartController {
 				cm.setCartUserDetails(u);
 				cartDaoImpl.insert(cm);
 			}
-			else if(cartexit!=null)
+			else if(cartexists!=null)
 			{
 				Cart cm = new Cart();
-				cm.setCartId(cartexit.getCartId());
+				cm.setCartId(cartexists.getCartId());
 				cm.setCartPrice(price);
 				
 				cm.setCartproductId(pid);
 				//cm.setCartImg(imgName);
-				cm.setCartProdName(productName);
-				cm.setCartQnty(cartexit.getCartQnty()+quantity);
+				cm.setCartProductName(productName);
+				cm.setCartQnty(cartexists.getCartQnty()+quantity);
 				User u = userDAO.getUser(userEmail);
 				cm.setCartUserDetails(u);
 				cartDaoImpl.Update(cm);
@@ -258,7 +258,7 @@ public class CartController {
 		return mv;
 	}
 
-	@RequestMapping(value="goToCart",method=RequestMethod.GET)
+	@RequestMapping(value="/goToCart",method=RequestMethod.GET)
 	public ModelAndView goToCart(HttpServletRequest request)
 	{
 		ModelAndView mv = new ModelAndView();

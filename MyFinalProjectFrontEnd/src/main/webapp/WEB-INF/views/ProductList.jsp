@@ -51,7 +51,7 @@ tr:hover{background-color:#f5f5f5}
 		<td>${product.catName}</td>
 		<td>${product.stock}</td>
 		<td>
-			<a href="productDesc/${product.productId}">
+			<a href="productDetails/${product.productId}">
 			<img src="<c:url value="resources/images/${product.productId}.jpg"/>" width="150px" height="150px">
 			</a>
 		</td>

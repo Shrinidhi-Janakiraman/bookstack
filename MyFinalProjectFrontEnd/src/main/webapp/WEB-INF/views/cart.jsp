@@ -44,7 +44,7 @@ tr:hover{background-color:#f5f5f5}
 <br>
 <br>
 <div class="container">
-<h4><img alt="" src="${pageContext.request.contextPath }/resources/Cart.jsp">&nbsp; My Cart</h4>
+<h4><img alt="" src="${pageContext.request.contextPath }/resources/cart.jpg">&nbsp; My Cart</h4>
 <table id="cart" class="table table-hover table-condensed">
 <thead>
 <tr>
@@ -74,11 +74,11 @@ tr:hover{background-color:#f5f5f5}
 </tr>
 </c:forEach>
 <tr>
-<td><span class="col-lg-7" align="right"><label>Grant Total</label><c:out value="${gtot }"></c:out></span></td>
+<td><span class="col-lg-7" align="right"><label>Grand Total</label><c:out value="${gtot }"></c:out></span></td>
 </tr>
 </tbody>
 <tr>
-<td><a href="userHome" class="btn btn-warning">Continue Shopping</a></td>
+<td><a href="productList" class="btn btn-warning">Continue Shopping</a></td>
 
 <c:if test="${not empty cartInfo }">
 <td><a href="/checkout" class="btn btn-success">Checkout</a></td>

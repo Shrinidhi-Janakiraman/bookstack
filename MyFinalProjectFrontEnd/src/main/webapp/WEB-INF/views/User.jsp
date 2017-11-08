@@ -4,6 +4,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title></title>
 
@@ -39,8 +44,8 @@ body, html
 <br>
 <div class="container">
 <div class="jumbotron">
-<h2>Register</h2>
-<div class="col-lg-12">
+<h1>Register</h1>
+<!-- <div class="col-lg-12"> -->
 <div class="row">
 <br>
 <br>
@@ -90,7 +95,7 @@ body, html
 
 </form:form> --%>
 <form:form action="AddUser" modelAttribute="user"> 
-<div class="col-lg-8">
+<!-- <div class="col-lg-12"> -->
 		<div class="form-group">
 	    <label>Username</label>
 	    <form:input path="userName" placeholder="Enter UserName" class="form-control"  />
@@ -113,7 +118,7 @@ body, html
 
 	    <div class="form-group">
 	    <label>Address</label>
-	    <form:input path="userAddress" placeholder="Enter Address" class="form-control"></form:input>
+	    <form:input path="userAddress" placeholder="Enter Address" class="form-control"/>
 	    </div>
 	
 	<br>
@@ -122,14 +127,14 @@ body, html
 	<button type="submit" class="btn btn-lg btn-info">Submit</button>
 	<button type="reset"  class="btn btn-lg btn-info">Cancel</button>
 	</center>
-	</div>
+	<!-- </div> -->
 
 
 </form:form>
 </div>
 </div>
 </div>
-</div>
+<!-- </div> -->
 <jsp:include page="/WEB-INF/views/footer.jsp"></jsp:include>
 </body>
 </html>

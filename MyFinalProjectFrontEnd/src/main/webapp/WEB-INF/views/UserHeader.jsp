@@ -105,7 +105,7 @@
           <li><a href="productList">Children's Books</a></li>
         </ul>
       </li>
- <li><a href="cart">Cart</a> </li>
+ <li><a href="${pageContext.request.contextPath }/goToCart">My Cart</a> </li>
  <li><a href="order">Order</a></li>
 </ul> 
     <ul class="nav navbar-nav navbar-right">

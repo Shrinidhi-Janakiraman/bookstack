@@ -45,13 +45,12 @@
  --%>	
  <br>
  <br>
-    <input type="number" name="quantity" placeholder="Enter quantity" class="form-control"/>
+ <!-- <a href="addToCart" class="btn btn-success">Add to Cart </a> -->
+   <!--  <input type="number" name="cartQnty" placeholder="Enter quantity" class="form-control"/> -->
 	<!-- <input type="number" class="form-control" name="quantity" required> -->
 	
-	<input class="btn btn-primary btn-lg" type="submit" value="Add To Cart">
+	<input class="btn btn-primary btn-lg" type="submit" value="Add to Cart">
 	
-	
-
 </form>
 </div>
 <jsp:include page="/WEB-INF/views/footer.jsp"></jsp:include>

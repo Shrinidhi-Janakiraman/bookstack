@@ -6,6 +6,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title></title>
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf=8">
@@ -40,17 +45,18 @@ body, html
 <br>
 <br>
 <br>
+<form action="perform_login" method="post">
 <div class="container">
 <div class="jumbotron">
 <h1>Login</h1>
-<div class="col-lg-12">
-<div class="row">
+<!-- <div class="col-lg-12">-->
+<div class="row"> 
 <br>
 <br>
 <br>
 <br>
 
-<form action="perform_login" method="post">
+<%-- <form action="perform_login" method="post"> --%>
 <!-- <table align="center">
 	
 		<tr><td colspan="2"><center>Login Page</center></td></tr>
@@ -67,7 +73,7 @@ body, html
 		</tr>
 </table> -->
 
-  <div class="col-lg-8">
+  <div class="col-lg-12">
       <div class="form-group">
       <label>UserName</label>
       <input type="text" class="form-control" placeholder="Enter username" name="username" required>
@@ -75,18 +81,19 @@ body, html
       <div class="form-group">
       <label>Password:</label>
       <input type="password" class="form-control" placeholder="Enter password" name="password" required>
-   </div>
+      </div>
     
     <a href="user">Create Account</a>
     <br>
     <br>
   <center><button type="submit" class="btn btn-lg btn-info">Submit</button></center>
   </div>
+
+</div>
+</div>
+<!-- </div>-->
+</div> 
 </form>
-</div>
-</div>
-</div>
-</div>
 <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

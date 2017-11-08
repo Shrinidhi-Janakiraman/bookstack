@@ -248,12 +248,12 @@ public class ProductController {
 		return "Fiction";
 	}
 	
-	@RequestMapping(value="productDesc/{productId}")
+	@RequestMapping(value="productDetails/{productId}")
 	public String showProductDesc(@PathVariable("productId")int productId,Model m)
 	{
 		Product product = productDAO.getProduct(productId);
 		m.addAttribute("product",product);
-		return "ProductDesc";
+		return "ProductDetails";
 	}
 	@RequestMapping("productCustList")
 	public ModelAndView productcustList(@RequestParam("catId") int catId,Model m)
